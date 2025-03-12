@@ -3,16 +3,24 @@
 #include <string>
 #include <vector>
 
+#include "Factura.h"
 #include "Producto.h"
 
 using namespace std;
+
+struct aComprar {
+    int cantidad;
+    Producto producto;
+};
+
 
 class Cliente {
 
     private:
     string nombre;
     string id;
-    vector<Producto> carrito;
+    vector<aComprar> carrito;
+    vector<Factura> facturas;
 
     public:
     Cliente();
@@ -26,6 +34,10 @@ class Cliente {
     void setId(string id);
 
     string agregarProducto(Producto producto, int cantidad);
+
+    string verFactura();
+
+    string irPagar();
 
 };
 

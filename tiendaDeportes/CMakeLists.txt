@@ -7,4 +7,6 @@ add_executable(tiendaDeportes main.cpp
         src/Producto.cpp
         src/Producto.h
         src/Cliente.cpp
-        src/Cliente.h)
+        src/Cliente.h
+        src/Factura.cpp
+        src/Factura.h)

@@ -67,6 +67,12 @@ build CMakeFiles/tiendaDeportes.dir/src/Cliente.cpp.obj: CXX_COMPILER__tiendaDep
   OBJECT_DIR = CMakeFiles\tiendaDeportes.dir
   OBJECT_FILE_DIR = CMakeFiles\tiendaDeportes.dir\src
 
+build CMakeFiles/tiendaDeportes.dir/src/Factura.cpp.obj: CXX_COMPILER__tiendaDeportes_unscanned_Debug D$:/Escritorio/Javeriana/Semestre$ #3/POO/Tareas/3-ejercicio-de-dise-o-y-codificaci-n-yura-hernandez-y-juan-jose-bolivar/tiendaDeportes/src/Factura.cpp || cmake_object_order_depends_target_tiendaDeportes
+  DEP_FILE = CMakeFiles\tiendaDeportes.dir\src\Factura.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\tiendaDeportes.dir
+  OBJECT_FILE_DIR = CMakeFiles\tiendaDeportes.dir\src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target tiendaDeportes
@@ -75,7 +81,7 @@ build CMakeFiles/tiendaDeportes.dir/src/Cliente.cpp.obj: CXX_COMPILER__tiendaDep
 #############################################
 # Link the executable tiendaDeportes.exe
 
-build tiendaDeportes.exe: CXX_EXECUTABLE_LINKER__tiendaDeportes_Debug CMakeFiles/tiendaDeportes.dir/main.cpp.obj CMakeFiles/tiendaDeportes.dir/src/Producto.cpp.obj CMakeFiles/tiendaDeportes.dir/src/Cliente.cpp.obj
+build tiendaDeportes.exe: CXX_EXECUTABLE_LINKER__tiendaDeportes_Debug CMakeFiles/tiendaDeportes.dir/main.cpp.obj CMakeFiles/tiendaDeportes.dir/src/Producto.cpp.obj CMakeFiles/tiendaDeportes.dir/src/Cliente.cpp.obj CMakeFiles/tiendaDeportes.dir/src/Factura.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\tiendaDeportes.dir
