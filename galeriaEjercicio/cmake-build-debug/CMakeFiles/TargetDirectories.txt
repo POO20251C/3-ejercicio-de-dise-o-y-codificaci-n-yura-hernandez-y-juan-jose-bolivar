@@ -1,0 +1,3 @@
+C:/Users/juanj/Desktop/trabajos POO/3-ejercicio-de-dise-o-y-codificaci-n-yura-hernandez-y-juan-jose-bolivar/galeriaEjercicio/cmake-build-debug/CMakeFiles/galeriaEjercicio.dir
+C:/Users/juanj/Desktop/trabajos POO/3-ejercicio-de-dise-o-y-codificaci-n-yura-hernandez-y-juan-jose-bolivar/galeriaEjercicio/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/juanj/Desktop/trabajos POO/3-ejercicio-de-dise-o-y-codificaci-n-yura-hernandez-y-juan-jose-bolivar/galeriaEjercicio/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,24 +1,23 @@
 #include <iostream>
 
-#include "src/Obra.h"
 #include "src/Artista.h"
 #include "src/Galeria.h"
+#include "src/Obra.h"
 
 using namespace std;
 // TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 int main() {
-    Galeria gale("Museolandia","Calle 5ta");
-    Obra miobra("La decadencia","1050","20252002"); // instancia del objeto Obra
+    Galeria gale("La Cabina del futbol"," Cl. 18 #118-250, UNIVERSIDAD JAVERIANA");
+    Obra miobra("Real Madrid Vs Atletico","2080","20250312"); // instancia del objeto Obra
     cout << "El nombre de la obra es:" << miobra.getTitulo() << "\ny mi id es: "<<miobra.getId() << endl;
-    Obra miobra2("La belleza", "1051","20250503");
-    Artista art("1234","Maestro Lemus","20250301");
-    Artista art2("1235","Maestro Botero","20250306");
+    Obra miobra2("Liverpool Vs PSG", "5040","250311");
+    Artista art("12345","Vinicius Jr","20250312");
+    Artista art2("5791","Ousmane Dembele","20250312");
     cout << "El artista se llama: " << art.getName() << endl;
     cout << art.registrarObra(miobra) << endl;
     cout << art.registrarObra(miobra2) << endl;
     cout << art.mostrarObras() << endl;
-    cout << "\n" << "DESDE AQUI LO NUEVO" << endl;
     cout << gale.registrarArtista(art) << endl;
     cout << gale.registrarArtista(art2) << endl;
     cout << "ESTOS SON LOS ARTISTAS REGISTRADOS EN LA GALERIA: " << gale.getName() << endl;
