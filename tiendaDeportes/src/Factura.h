@@ -1,8 +1,11 @@
 #ifndef FACTURA_H
 #define FACTURA_H
 #include <string>
+#include <vector>
+#include "Producto.h"
 
-#include "Cliente.h"
+struct aComprar;
+
 
 using namespace std;
 
@@ -17,6 +20,7 @@ class Factura {
     public:
 
     Factura(string nombre_cliente, string id_cliente, vector<aComprar> productos, int total);
+    string getId();
     string toString();
 
 

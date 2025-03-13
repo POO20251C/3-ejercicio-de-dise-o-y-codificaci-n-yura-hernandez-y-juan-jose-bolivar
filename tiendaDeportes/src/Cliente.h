@@ -6,11 +6,26 @@
 #include "Factura.h"
 #include "Producto.h"
 
+class TiendaDeportiva;
+
 using namespace std;
 
 struct aComprar {
     int cantidad;
-    Producto producto;
+    Producto* producto;
+
+    aComprar(int cantidad, Producto* producto): cantidad(cantidad), producto(producto) {}
+    aComprar(): cantidad(0), producto(nullptr) {}
+
+    aComprar& operator+=(const aComprar& other) {
+        if (this != &other) {
+            cantidad += other.cantidad;
+            producto = other.producto;
+        }
+        return *this;
+    }
+
+
 };
 
 
@@ -21,6 +36,7 @@ class Cliente {
     string id;
     vector<aComprar> carrito;
     vector<Factura> facturas;
+    TiendaDeportiva* tienda;
 
     public:
     Cliente();
@@ -33,11 +49,13 @@ class Cliente {
     void setNombre(string nombre);
     void setId(string id);
 
-    string agregarProducto(Producto producto, int cantidad);
+    string agregarProducto(Producto* producto, int cantidad);
 
-    string verFactura();
+    string verFacturas();
 
     string irPagar();
+
+    string registrarTienda(TiendaDeportiva* tienda);
 
 };
 
