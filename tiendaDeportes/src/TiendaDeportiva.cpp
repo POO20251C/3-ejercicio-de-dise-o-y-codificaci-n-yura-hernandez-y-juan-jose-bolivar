@@ -9,9 +9,9 @@ string TiendaDeportiva::getNombreTienda() {
     return nombreTienda;
 }
 
-string TiendaDeportiva::agregarCliente(Cliente* cliente) {
+string TiendaDeportiva::agregarCliente(Cliente cliente) {
     string ans;
-    if (cliente->getId() != "") {
+    if (cliente.getId() != "") {
         clientes.push_back(cliente);
         ans += "Cliente agregado exitosamente\n";
     }
@@ -33,9 +33,9 @@ string TiendaDeportiva::agregarFactura(Factura factura) {
     return ans;
 }
 
-string TiendaDeportiva::agregarProducto(Producto *producto) {
+string TiendaDeportiva::agregarProducto(Producto producto) {
     string ans;
-    if (producto->getId() != "") {
+    if (producto.getId() != "") {
         productos.push_back(producto);
         ans += "Producto agregado exitosamente\n";
     }
@@ -49,7 +49,7 @@ string TiendaDeportiva::verProductos() {
     string ans;
     if (productos.size() > 0) {
         for (int i = 0; i < productos.size(); i++) {
-            ans += productos[i]->getNombre() + " Cantidad: " + to_string(productos[i]->getDisponible()) + "\n";
+            ans += productos[i].getNombre() + " Cantidad: " + to_string(productos[i].getDisponible()) + "\n";
         }
     }
     else {
@@ -62,7 +62,7 @@ string TiendaDeportiva::verProductos() {
 string TiendaDeportiva::verClientes() {
     string ans;
     for (int i = 0; i < clientes.size(); i++) {
-        ans += to_string(i+1) + ". " + clientes[i]->getNombre() + "\n";
+        ans += to_string(i+1) + ". " + clientes[i].getNombre() + "\n";
     }
     return ans;
 }
@@ -95,6 +95,14 @@ string TiendaDeportiva::verFacturasDe(string id_cliente) {
         ans += "El cleinte con ID: " + id_cliente + "no tiene facturas generadas\n";
     }
     return ans;
+}
+
+vector<Cliente> TiendaDeportiva::getClientes() {
+    return this->clientes;
+}
+
+vector<Producto> TiendaDeportiva::getProductos() {
+    return this->productos;
 }
 
 

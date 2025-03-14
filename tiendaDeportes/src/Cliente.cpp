@@ -92,7 +92,6 @@ string Cliente::irPagar() {
 string Cliente::registrarTienda(TiendaDeportiva* tienda) {
     string ans;
     this->tienda = tienda;
-    tienda->agregarCliente(this);
     ans += "Registro exitoso\n";
     return ans;
 }

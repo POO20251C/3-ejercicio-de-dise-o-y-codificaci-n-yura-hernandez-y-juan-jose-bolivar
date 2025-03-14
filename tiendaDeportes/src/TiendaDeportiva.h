@@ -14,9 +14,9 @@ class TiendaDeportiva {
 
     private:
     string nombreTienda;
-    vector<Cliente*> clientes;
+    vector<Cliente> clientes;
     vector<Factura> facturas;
-    vector<Producto*> productos;
+    vector<Producto> productos;
 
     public:
 
@@ -29,11 +29,14 @@ class TiendaDeportiva {
 
     string verFacturasDe(string id_cliente);
 
-    string agregarCliente(Cliente* cliente);
+    string agregarCliente(Cliente cliente);
     string agregarFactura(Factura factura);
-    string agregarProducto(Producto* producto);
+    string agregarProducto(Producto producto);
 
     string verProductos();
+
+    vector<Cliente> getClientes();
+    vector<Producto> getProductos();
 
 
 
